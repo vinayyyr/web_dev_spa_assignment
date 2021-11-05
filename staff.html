@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <h3>Staff</h3>
+    <form action="/action_page.php" method="get" id="form1">
+        <label for="Staff_id">Staff_id:</label>
+        <input type="integer" id="Staff_id" name="Staff_id"><br><br>
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+        <label for="DOB">DOB:</label>
+        <input type="integer" id="DOB" name="DOB"><br><br>
+        <label for="gender">Gender:</label><br>
+        <input type="radio" id="male" name="DOB" value="male">
+        <label for="html">Male</label>
+        <input type="radio" id="female" name="DOB" value="female">
+<label for="html">Female</label><br><br>
+        <label for="lang">Department</label>
+          <select name="Department" id="lang">
+          <option value="CS">Computer Engineering</option>
+          <option value="Arch">Architecture</option>
+          <option value="SoSci">Social Sciences</option>
+          <option value="BA">Business Administration</option>
+          <option value="BM">Business Management</option>
+          <option value="CulSciences">Cultural Sciences</option>
+          
+          </select><br><br>
+          <label for="email">Email_id:</label>
+          <input type="text" id="email" name="email"><br><br>
+        </form>
+        
+        <button type="submit" form="form1" value="Submit">Submit</button>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Catty Music</title>
+<link rel="stylesheet" href="login.css">
+
+</head>
+<body>
+<main>
+
+    <ul>
+        <li><Home/li>
+        <li>About</li>
+        <li><a href="admin.html">Student</a></li>
+        <li><a href ="admin.html">Staff</a></li>
+        <li>Login</li>
+    </ul>
+    <div class="login-block">
+        <h3>Admin Login</h3>
+        <form>
+          <input type="text" name="username" id="username" Placeholder="enter username"><br>
+          <input type="password" name="password" id="password" Placeholder="enter password"><br>
+          <button onclick="user1()"><a href="admin.html">Login</a></button>
+         
+        </form>
+    </div>
+    <div class="login-block">
+        <h3>Staff Login</h3>
+        <form>
+          <input type="text" name="username" id="username" Placeholder="enter username"><br>
+          <input type="password" name="password" id="password" Placeholder="enter password"><br>
+          <button onclick="user1()">Login</button>
+        </form>
+    </div>
+    <script>
+    function user1() {
+        var user = document.getElementById('username').value
+        var pass = document.getElementById('password').value
+        if (user == "admin" && pass == "admin") {
+          window.open("admin.html")
+          
+        } else {
+          alert('incorrect username or password')
+        }
+      }
+    </script>
+      
+</main>
+<footer></footer>
+</body>
+</html>
